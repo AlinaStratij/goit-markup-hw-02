@@ -3,35 +3,33 @@
   --hover-color: #2196f3;
   --text-color: #757575;
   --background-color-hero-footer: #2f303a;
+  --background-color-main: #ffffff;
+  --bacground-color-image: #f5f4fa;
 }
 
 body {
-  background-color: #ffffff;
-  font-family: Roboto, Raleway, sans-serif;
+  background-color: var(--background-color-main);
+  font-family: Roboto, sans-serif;
 }
 /* section "header" */
 .header-logo {
-  font-family: Raleway, Tahoma, sans-serif;
-  font-style: normal;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
 }
 .logo-web {
-  color: #2196f3;
-  margin-right: -4px;
+  color: var(--hover-color);
 }
 .logo-studio {
   color: #000000;
 }
 .header-list {
-  text-decoration: none;
   list-style: none;
 }
 .header-item {
   text-decoration: none;
   color: var(--title-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -64,18 +62,17 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--background-color-main);
 }
 .hero-button {
   font-family: inherit;
-  font-style: normal;
   width: 200px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--background-color-main);
+  background-color: var(--hover-color);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -83,7 +80,16 @@ body {
 }
 /* section "our benefits" */
 .benefits-title {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: insert(100%);
+  margin: -1px;
 }
 .benefits-list {
   list-style: none;
@@ -94,9 +100,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  text-transform: uppercase;
 }
 .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -104,7 +110,7 @@ body {
 }
 /* section "work" */
 .about {
-  background-color: #f5f4fa;
+  background-color: var(--bacground-color-image);
 }
 .about-title {
   font-weight: 700;
@@ -118,7 +124,7 @@ body {
 }
 /* section "team" */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--bacground-color-image);
 }
 .team-members {
   list-style: none;
@@ -138,7 +144,6 @@ body {
   color: var(--title-color);
 }
 .member-profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -154,28 +159,24 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--hover-color);
   text-decoration: none;
 }
-.web {
-  margin-right: -4px;
-}
 .studio {
-  color: #ffffff;
+  color: var(--background-color-main);
 }
 .footer-contacts {
   list-style: none;
+  font-style: normal;
 }
 .adress-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--background-color-main);
   text-decoration: none;
 }
 .footer-contact {
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -188,25 +189,38 @@ body {
 }
 .btn {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  background-color: #f5f4fa;
+  background-color: var(--bacground-color-image);
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--hover-color);
-  color: #ffffff;
+  color: var(--background-color-main);
 }
 .portfolio {
-  display: none;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: insert(100%);
+  margin: -1px;
 }
 .portfolio-list {
   list-style: none;
 }
+.portfolio-item {
+  text-decoration: none;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -216,8 +230,6 @@ body {
 }
 .portfolio-text {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
